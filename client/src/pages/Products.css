@@ -1,0 +1,75 @@
+/* Basic reset for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Center the form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Label styles */
+  label {
+    margin-bottom: 5px;
+  }
+  
+  /* Input field styles */
+  input[type='text'],
+  input[type='number'],
+  input#pid,
+  input#quantity,
+  input#supplierid,
+  input#supid,
+  input#address {
+    width: 250px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  /* Change border color on focus */
+  input[type='text']:focus,
+  input[type='number']:focus,
+  input#pid:focus,
+  input#quantity:focus,
+  input#supplierid:focus,
+  input#supid:focus,
+  input#address:focus {
+    border-color: #4caf50;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
