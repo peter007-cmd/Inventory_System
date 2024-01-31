@@ -4,6 +4,8 @@ import mysql2 from "mysql2";
 import { productRouter } from "./routes/product.js";
 import {dataRouter} from "./routes/finaldata.js";
 import { trRouter } from "./routes/transactiondata.js";
+import { userDetailsRouter } from "./routes/userDetails.js";
+import { authRouter } from "./routes/Auth.js";
 const connection = mysql2.createConnection({
     host: 'localhost',
     user: 'root',
@@ -23,5 +25,7 @@ app.use(cors())
 app.use('/',productRouter)
 app.use('/data',dataRouter)
 app.use('/trdata',trRouter)
+app.use('/auth',authRouter)
+app.use('/user',userDetailsRouter)
 app.listen(5000,()=>console.log("server running"))
 export {connection}
